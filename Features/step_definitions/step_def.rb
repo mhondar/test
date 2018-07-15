@@ -11,14 +11,14 @@ end
 And(/^Click en Ida y Vuelta$/) do
     @VuelosPage.clickIdaVuelta
 end
-Then(/^Inserta <Origen>$/) do
-    @VuelosPage.inserta <Origen>   
+Then(/^Inserta Origen$/) do
+    @VuelosPage.inserta "La Habana"   
 end
 And(/^Click en Destino$/)do
     @VuelosPage.clickDestino
 end
-And(/^Inserta <Destino>$/)do
-    @VuelosPage.insertaDestino <Destino>
+And(/^Inserta Destino$/)do 
+    @VuelosPage.insertaDestino "Santiago de Chile" 
     sleep 2
 end
 Then(/^Click en Fecha Ida$/) do

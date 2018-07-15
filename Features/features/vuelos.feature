@@ -3,9 +3,9 @@ Feature: Buscar Vuelos
     Given Abierta la pagina www.viajesfallabella.cl
     When Click en Vuelos
     And Click en Ida y Vuelta
-    Then Inserta <Origen> 
+    Then Inserta Origen <Origen> 
     And Click en Destino 
-    And Inserta <Destino> 
+    And Inserta Destino
     Then Click en Fecha Ida
     And Click en Fecha de Ida Seleccionada
     Then Click en Fecha de Regreso
@@ -16,23 +16,19 @@ Feature: Buscar Vuelos
     Then Click en Buscar
     Then Verificar Pagina de resultados
 
-Scenario: Buscar Vuelos Solo Ida
-    Given Abierta la pagina www.viajesfallabella.cl
-    When Click en Vuelos
-    And Click en Solo Ida
-    Then Inserta Origen
-    And Click en Destino
-    And Inserta Destino
-    Then Click en Fecha Ida
-    And Click en Fecha de Ida Seleccionada
-    Then Selecciona Cantidad de Adultos
-    And Selecciona Niños
-    And Selecciona Infante
-    Then Click en Buscar
-    Then Verificar Pagina de resultados
+# Scenario: Buscar Vuelos Solo Ida
+#     Given Abierta la pagina www.viajesfallabella.cl
+#     When Click en Vuelos
+#     And Click en Solo Ida
+#     Then Inserta Origen
+#     And Click en Destino
+#     And Inserta Destino
+#     Then Click en Fecha Ida
+#     And Click en Fecha de Ida Seleccionada
+#     Then Selecciona Cantidad de Adultos
+#     And Selecciona Niños
+#     And Selecciona Infante
+#     Then Click en Buscar
+#     Then Verificar Pagina de resultados
     
-  Examples:
-    | origen              | destino | 
-    | "La Habana"         | "Santiago de Chile"  | 
-    | "Santiago de Chile" | "La Habana" |  
   
