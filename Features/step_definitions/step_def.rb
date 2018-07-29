@@ -11,7 +11,7 @@ end
 And(/^Click en Ida y Vuelta$/) do
     @VuelosPage.clickIdaVuelta
 end
-Then (/^Inserta Origen (.+)$/) do 
+Then (/^Inserta Origen$/) do 
     @VuelosPage.insertaOrigen "La Habana"  
 end
 And(/^Click en Destino$/)do
