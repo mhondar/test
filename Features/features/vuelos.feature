@@ -16,11 +16,6 @@ Feature: Buscar Vuelos
     Then Click en Buscar
     Then Verificar Pagina de resultados
 
-  Examples:
-  | Origen | 
-  |  "La Habana"  | 
-  | "Santiago de Cuba" |
-
 #  Scenario: Buscar Vuelos Solo Ida
 #      Given Abierta la pagina www.viajesfallabella.cl
 #      When Click en Vuelos
