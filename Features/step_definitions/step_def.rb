@@ -1,6 +1,7 @@
 Given(/^Abierta la pagina www.viajesfallabella.cl$/) do
     @VuelosPage = VuelosPage.new(@browser)
     @VuelosPage.visit("https://www.viajesfalabella.cl")
+    @Datos = YAML.load_file("Features/Datos/Datos.yml")
 end  
 When(/^Click en Vuelos$/) do
     @VuelosPage.clickVuelos
@@ -12,7 +13,7 @@ And(/^Click en Ida y Vuelta$/) do
     @VuelosPage.clickIdaVuelta
 end
 Then (/^Inserta Origen$/) do 
-    @VuelosPage.insertaOrigen "La Habana"  
+    @VuelosPage.insertaOrigen @Datos["Busqueda_1"]["Origen"] 
 end
 And(/^Click en Destino$/)do
     @VuelosPage.clickDestino
